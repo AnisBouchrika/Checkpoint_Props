@@ -1,10 +1,7 @@
-
+import PropTypes from "prop-types";
 import React from "react";
 
-
-
-
-const profile = (props) =>{
+const Profile = (props) =>{
 
         return (
         <div>
@@ -19,5 +16,15 @@ const profile = (props) =>{
         </div>
         
         )
-        }
-        export default profile ;
+}
+
+Profile.propTypes = {
+        fullName : PropTypes.string,
+        bio  : PropTypes.string,
+        profession  : PropTypes.string
+} 
+
+export default Profile ;
+
+     
+        
